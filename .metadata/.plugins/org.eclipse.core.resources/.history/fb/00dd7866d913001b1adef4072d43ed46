@@ -1,0 +1,58 @@
+package br.com.casageral.modelo;
+
+public class Televisao {
+	private String marca;
+	private float valor;
+	private boolean status;
+	private int canal;
+	private int volume;
+	
+	//Preencher Marca
+	public void preencherMarca(String pMarca) {
+		marca = pMarca;
+	}
+	
+	//Preencher Valor
+	public void preencherValor(float pValor) {
+		if(pValor > 0) {
+			valor = pValor;	
+		}
+	}
+
+	//Ligar
+	public String ligar() {
+		status=true;
+		return "TV Ligada";
+	}
+	
+	//Desligar
+	public String desligar() {
+		status=false;
+		return "TV desligada";	
+	}
+	
+	//Mudar canal
+	//Aumentar volume
+	//Diminuir volume
+	
+	//Retornar Marca
+	public String retornaMarca() {
+		return marca;
+	}
+	
+	//Retornar Valor
+	public float retornaValor() {
+		return valor;
+	}
+	
+	//Retornar Status
+	
+	
+	//Retornar canal
+	
+	
+	//Retornar volume
+	
+	//RetornarTudo
+
+}

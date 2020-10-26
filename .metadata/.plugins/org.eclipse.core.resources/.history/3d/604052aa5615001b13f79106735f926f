@@ -1,0 +1,43 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Bacharelado;
+import br.com.unixyz.modelo.Endereco;
+import br.com.unixyz.modelo.Formacao;
+import br.com.unixyz.modelo.Medio;
+import br.com.unixyz.modelo.Tecnologo;
+import br.com.unixyz.util.Magica;
+
+public class ImplementarFormacao {
+
+	public static void main(String[] args) {
+		Formacao f = new Formacao();
+		int resposta = Magica.i("Digite <1> Médio ou <2> Bacharel <3>Tecnólogo");
+		if (resposta == 1) {
+			f = new Medio(
+					Magica.s("Descrição"),
+					Magica.i("Duração:"),
+					Magica.f("Mensalidade:"),
+					Magica.s("Tipo")
+					);
+		}else if (resposta==2){
+			f = new Bacharelado(
+					Magica.s("Descrição"),
+					Magica.i("Duração:"),
+					Magica.f("Mensalidade:"),
+					Magica.i("Carga Horária:"),
+					Magica.s("Trabalho de Conclusão:")
+					);
+		}else if (resposta==3) {
+			f = new Tecnologo(
+					Magica.s("Descrição"),
+					Magica.i("Duração:"),
+					Magica.f("Mensalidade:"),
+					Boolean.parseBoolean(JOptionPane.showInputDialog("Plano estendido:"))
+					);
+		}
+
+	}
+
+}

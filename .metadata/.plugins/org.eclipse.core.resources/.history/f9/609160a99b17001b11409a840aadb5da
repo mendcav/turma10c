@@ -1,0 +1,39 @@
+package br.com.colecoes.implementacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.colecoes.beans.Cargo;
+
+public class TesteListObject {
+
+	
+	public static void main(String[] args) {
+		List<Cargo> lista = new ArrayList<Cargo>();
+		lista.add(new Cargo ("DBA", "JR",8000));
+		lista.add(new Cargo ("PROJETO", "PL",20000));
+		lista.add(new Cargo ("ESTAGIARIO", "SR",5000));
+		//System.out.println(lista.get(1).getSalario());
+		
+		//Exiba o total de todos os salarios
+		//Exiba somento os cargos com salario > 7000
+		
+		float soma = 0;
+		
+		for (Cargo objeto : lista) {			
+			soma = soma + objeto.getSalario();
+			
+			if (objeto.getSalario()>7000 ) {
+				System.out.println("salario > 7000 = " + objeto.getSalario());
+			}
+			//System.out.println("nome   : " + objeto.getNome());
+			//System.out.println("salario: " + objeto.getSalario());
+		}
+		System.out.println("total dos salarios : " + soma);
+		
+		
+		
+		
+		
+	}
+}

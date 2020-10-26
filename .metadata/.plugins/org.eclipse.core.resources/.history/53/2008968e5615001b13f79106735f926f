@@ -1,0 +1,32 @@
+package br.com.unixyz.implementacao;
+
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.PessoaFisica;
+import br.com.ecommerce.modelo.PessoaJuridica;
+import br.com.ecommerce.util.Magica;
+import br.com.unixyz.modelo.Formacao;
+
+public class ImplementarFormacao {
+
+	public static void main(String[] args) {
+		Formacao f = new Formacao();
+		int resposta = Magica.i("Digite <1> Médio ou <2> Bacharel <3>Tecnólogo");
+		if (resposta == 1) {
+			f = new Medio(
+					
+					);
+		}else if (resposta==2){
+			f = new Bacharelado(
+					2,
+					"EMPRESA",
+					"1234-4321",
+					new Endereco(),
+					"00.000.000/0001-00",
+					"00.000.000.000",
+					"SR JOão".toUpperCase()
+					);
+		}
+
+	}
+
+}

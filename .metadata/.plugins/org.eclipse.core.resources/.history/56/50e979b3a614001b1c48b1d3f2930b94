@@ -1,0 +1,35 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Venda;
+import br.com.ecommerce.util.Magica;
+
+public class ImplementarEcommerce {
+
+	public static void main(String[] args) {
+		Venda venda = new Venda(
+				Magica.i("Nota Fiscal"),
+				Magica.f("Total"),
+				Magica.f("Desconto"),
+				Magica.s("data"),
+				new Cliente(
+						Magica.i("ID"),
+						Magica.s("Nome"),
+						Magica.s("Telefone"),
+						new Endereco(
+								Magica.s("Logradouro"),
+								Magica.s("Numero"),
+								Magica.s("Complemento"),
+								Magica.s("Bairro"),
+								Magica.s("Cidade"),
+								Magica.s("Estado"),
+								Magica.s("CEP")
+								)				
+
+						)
+				);
+
+	}
+
+}

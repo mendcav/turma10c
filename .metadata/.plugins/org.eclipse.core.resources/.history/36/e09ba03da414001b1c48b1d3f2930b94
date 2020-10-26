@@ -1,0 +1,87 @@
+package br.com.ecommerce.modelo;
+
+public class Cliente {
+	private int id;
+	private String nome;
+	private String fone;
+	private Cliente cliente;
+	private Produto produto;
+		
+	public String getAll() {
+		return
+				"ID......: " + id + "\n" +
+				"Nome....: " + nome + "\n" +
+				"Telefone: " + fone + "\n" +
+				"Cliente.: \n" + cliente.getAll() + "\n" +
+				"Produto.: \n" + produto.getAll();
+	}
+	
+	public void setAll(int id, String nome, String fone, Cliente cliente, Produto produto) {
+		this.id = id;
+		this.nome = nome;
+		this.fone = fone;
+		this.cliente = cliente;
+		this.produto = produto;
+	}
+
+
+
+	public Cliente() {
+		super();
+	}
+
+
+
+	public Cliente(int id, String nome, String fone, Cliente cliente, Produto produto) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.fone = fone;
+		this.cliente = cliente;
+		this.produto = produto;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
+	
+	
+
+}

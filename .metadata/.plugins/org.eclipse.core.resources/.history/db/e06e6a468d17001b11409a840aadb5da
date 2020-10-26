@@ -1,0 +1,27 @@
+package br.com.colecoes.implementacao;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class TesteList {
+	// Collection Framework=> possuem recursos para facilitar o trabalho com dados multivalorados
+	
+	public static void main(String[] args) {
+		List lista = new ArrayList();
+		
+		lista.add("DBA");
+		lista.add("DEV");
+		lista.add("DEVOPS");
+		lista.add("DBA");
+		
+		System.out.println(lista);
+		Collections.sort(lista);
+		System.out.println("ordenada: " + lista);
+		
+		
+		
+		
+	}
+
+}

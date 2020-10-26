@@ -1,0 +1,15 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.modelo.Venda;
+
+public class ImplementarEcommerce {
+
+	public static void main(String[] args) {
+		Venda venda = new Venda(
+				int nota 
+				);
+		
+
+	}
+
+}

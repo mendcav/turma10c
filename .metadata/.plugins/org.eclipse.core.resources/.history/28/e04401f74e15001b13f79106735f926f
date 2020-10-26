@@ -1,0 +1,32 @@
+package br.com.unixyz.modelo;
+
+public class Medio extends Formacao{
+	private String tipo;
+
+	
+	
+	public setAll(String tipo) {
+		super();
+		this.tipo = tipo;
+	}
+
+	public Medio() {
+		super();
+	}
+
+	public Medio(String tipo) {
+		super();
+		this.tipo = tipo;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+
+}

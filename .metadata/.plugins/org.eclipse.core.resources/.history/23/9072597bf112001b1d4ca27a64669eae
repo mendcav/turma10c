@@ -1,0 +1,20 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		/*Escreva um código que leia três valores inteiros e diferentes e mostre-os em ordem decrescente
+		 */
+
+		short num1 = Short.parseShort(JOptionPane.showInputDialog("Digite o primeiro numero"));
+		short num2 = Short.parseShort(JOptionPane.showInputDialog("Digite o segundo numero"));
+		short num3 = Short.parseShort(JOptionPane.showInputDialog("Digite o terceiro numero"));
+
+		if (num1 > num2) {
+			System.out.printf("os numeros em ordem descrescente são: %d, %d, %d",num1,num2,num3);
+
+		}
+	}
+}

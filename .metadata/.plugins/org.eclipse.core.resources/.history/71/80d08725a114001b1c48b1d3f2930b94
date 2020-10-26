@@ -1,0 +1,22 @@
+package br.com.ecommerce.modelo;
+
+public class Cliente {
+	private int id;
+	private String nome;
+	private String fone;
+	private Cliente cliente;
+	private Produto produto;
+		
+	public String getAll() {
+		return
+				"ID......: " + id + "\n" +
+				"Nome....: " + nome + "\n" +
+				"Telefone: " + fone + "\n" +
+				"Cliente.: \n" + cliente.getAll() + "\n" +
+				"Produto.: \n" + produto.getAll();
+	}
+	
+	
+	
+
+}
